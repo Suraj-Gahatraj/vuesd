@@ -6,6 +6,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 
 
 export default defineConfig({
+  publicPath:'/vuesd/',
   plugins: [vue(), vueJsx()],
   resolve: {
     alias: {
