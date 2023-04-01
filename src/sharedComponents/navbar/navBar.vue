@@ -1,7 +1,7 @@
 <template>
       <div class="logo-ham-menu absolute ">
         <div v-if="SideBarhideShow === false" class="flex gap-2 p-6 pl-0">
-          <img src="../../assets/hamburget menu icon.png" class="h-4 mt-5" @click=togglebar />
+          <img src="../../assets/hamburget_icon.png" class="h-4 mt-5" @click=togglebar />
           <img src="../../assets/Logo.png" class="h-16" />
         </div>
 

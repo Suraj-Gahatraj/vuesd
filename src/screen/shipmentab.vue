@@ -3,7 +3,7 @@
     toggleLight" :class="{active : enableDarkTheme===true}"
   
     >
-    <div class="lg:flex gap-2 p-1 ml-2">
+    <div class="lg:flex gap-2  p-2 lg:pr-0 lg:ml-2">
       <NavBar/>
       <div
         class="dash-board-main-content-wrapper pl-0 pt-0 mt-2"
@@ -26,14 +26,13 @@
                   <img src="../assets/download.png" class="h-4" />
                 </div>
                 <div class="hover:animate-bounce imgBg">
-                  <img src="../assets/import icon.png" class="h-4" />
+                  <img src="../assets/importFile_icon.png" class="h-4" />
                 </div>
                 <div class="hover:animate-bounce imgBg">
                   <div class="bg-gradian text-center imgs">+</div>
                 </div>
               </div>
-
-              <div class="flex gap-4 toggle-sm mt-2">
+              <div class="flex gap-4 toggle-sm mt-6">
                 <div class="mt-2 relative" @click="toggledropDownload">
                   <div
                     class="flex gap-2 border-2 border-indigo-10 bg-gray-100 p-1  toggleLight"
@@ -76,7 +75,7 @@
           </div>
         </div>
 
-        <div class="flex gap-4 border-b-2 border-indigo-10 w-full mt-4 ">
+        <div class="flex gap-4 border-b-2 border-indigo-10 w-full mt-8 ">
           <div class="p-3 pl-0 border-b-2 border-transparent opacity-50  tabShipment sm:text-sm md:text-lg  md:font-semibold"
             :class="{ active: tabShipment == 'neworders' }"
             @click="changeshipmentsTab('neworders')">
@@ -729,7 +728,10 @@ image {
   }
 
 
-
+  .sm-icons {
+ 
+    right: 7px;
+}
  
   .dash-board-main-content-wrapper {
     margin-left: auto;
@@ -767,23 +769,36 @@ image {
     height: 32px;
     width: 131px;
 }
-.sm-icons {
 
-top: 15px;
+.sm-icons {
+  
+    right: 8px;
+}
 
 }
 
+@media only screen and (min-width: 792px){
+
+ .sm-icons {
+  
+  right: 8px;
+  }
 }
 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
+ .sm-icons {
+  
+  right: 9px;
+  }
   .dash-board-main-content-wrapper {
     margin-left: auto;
     margin-right: auto;
-    width: 718px;
+    width: 773px;
   }
+
   .main-tab-content-wrapper {
     width: 100%;
     min-width: 452px;
@@ -799,13 +814,22 @@ top: 15px;
   }
 
  
-} /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+} 
 
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+ 
   .toggle-sm {
     width: 445px;
   }
   
+  .sm-icons {
+ 
+    right: 6px;
+  }
 
   .dash-board-main-content-wrapper {
     min-width: 76%;
@@ -816,6 +840,10 @@ top: 15px;
 }
 
 @media only screen and (min-width: 1300px) {
+  
+ 
+  
+
 .toggle-sm {
     display: flex;
   } 
@@ -829,11 +857,9 @@ top: 15px;
 
 }
 
+
+
 @media only screen and (min-width: 1400px) {
-  .dash-board-main-content-wrapper {
-    min-width: 81% !important;
-  
-  }
 
   .main-tab-content-wrapper {
     min-width: auto;
@@ -857,7 +883,7 @@ top: 15px;
     min-width: 452px;
   }
   .dash-board-main-content-wrapper {
-    min-width: 80%;
+    min-width: 78% !important;
     margin-left: auto;
     margin-right: auto;
   }
@@ -870,4 +896,13 @@ top: 15px;
  
 
 }
+
+@media only screen and (min-width: 1590px) {
+
+.dash-board-main-content-wrapper {
+  min-width: 82% !important;
+}
+
+}
+
 </style>

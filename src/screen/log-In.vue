@@ -6,12 +6,12 @@
 
         <div class="form-contian">
 
-        <div class="login-form-wrapper mt-10 pb-6">
+        <div class="login-form-wrapper  pb-6">
 
-            <form class="login-form-content relative pt-10 p-10 pb-0 ">
+            <form class="login-form-content relative pt-10 mt-10 p-10 pb-0 ">
                
-                <h1 class="text-center font-semibold text-2xl">Welcome back</h1>
-                <p class="text-center pt-2 font-normal">Log In to manage your deliveries and access other services.</p>
+                <p class="text-center font-semibold sm:text-2xl md:text-3xl">Welcome back</p>
+                <p class="text-center  pt-2 sm:text-base lg:text-lg">Log In to manage your deliveries and access other services.</p>
 
                 <div class=" p-10 pb-6 error" :class="{active : error===true}">
                   <label class="font-semibol ">Email</label>
@@ -26,7 +26,7 @@
                   <br/>
                   <div class="relative">
                     <input type="password" placeholder="Enter your password" id="passwordtype" v-model="userlogdata.password" v-on:input="enableDisableLoginButton"   class="w-full mt-2" />
-                    <img src="../assets/eye visibility.png"  class="eyeImg" @click="togglePasswordvisibilty"/>
+                    <img src="../assets/eye_visibility.png"  class="eyeImg" @click="togglePasswordvisibilty"/>
 
                     <p v-if="error===true">{{ error_info.message }}</p>
                   </div>
@@ -133,12 +133,12 @@ export default {
 
 font: normal normal  Lato;
 }
-.login-content-wrapper {
-
+h1 , p{
+  color: #1c1c1c;
 }
 
 .form-contian{
-  height:890px;
+  /* height:890px; */
   width: auto;
   display: flex;
   align-items: center;
@@ -155,7 +155,7 @@ font: normal normal  Lato;
 
 .login-form-wrapper{
   margin: auto;
-  width:563px;
+  width:637px;
   padding-bottom: 69px;
   box-shadow: 30px 53px 26px rgba(243, 72, 86, 0.03);
   border: 1px solid #F0F2F7;
@@ -205,7 +205,32 @@ input{
 width: 431px;
 
   }
+  .eyeImg{
 
+    right: 5px;
+    top: 30px;
+    height: 7px;
+  
+  }
+
+  input,
+input::placeholder {
+  font-size: 10px;
+}
+
+}
+@media only screen and (min-width: 600px) {
+  input,
+input::placeholder {
+    font-size: 18px;
+ 
+}
+  .eyeImg{
+    position: absolute;
+    right: 14px;
+    top: 33px;
+    height: auto;
+}
 }
 
 @media only screen and (min-width: 1400px) {

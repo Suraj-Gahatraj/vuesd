@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="for-justify-btwe user-heading pl-0 pt-2 p-6 pr-0 pb-3 border-b-2 border-indigo-10">
+      class="for-justify-btwe user-heading pl-0 pt-2 p-10 pr-0 pb-3 border-b-2 border-indigo-10">
       <div class="pl-0 p-6 pt-5 pb-4 w-100">
         <h1 class="font-semibold  ">
           Welcome back hello {{username }}
@@ -9,14 +9,14 @@
         <p class=" mt-1">{{ date }}</p>
       </div>
       <div class="mt-1">
-        <div class="flex gap-5">
+        <div class="flex  gap-5">
           <div class="hover:animate-bounce dark-light-btn  toggleLightmoonicon " :class="{active :  enableDarkTheme===true}"
                     @click="darkLightToggle">
                     <darkModeIcon/>
                   </div>
           <div class="relative flex" @click="toggleUserLogo">
-            <div class="user-logo bg-gradian">BK</div>
-            <div class="mt-4 ml-2">
+            <div class="user-logo bg-gradian sm:text-sm lg:text-base">BK</div>
+            <div class="mt-4  ml-2">
               <img src="../assets/dropdown.png" v-if="dropUserLog === false" />
               <img
                 src="../assets/dropdown.png"

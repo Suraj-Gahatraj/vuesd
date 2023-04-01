@@ -2,13 +2,17 @@
 <template>
 
 <div class="box-container-wrapper">
-  <div class="box toggleLight " :class="{active :  enableDarkTheme===true}">     
+  <div class="box toggleLight leading-6" :class="{active :  enableDarkTheme===true}">     
         <div class="empty-box-icon pb-2">
           <emptyBoxIcon/>
-        </div>
+        </div >
+        
+        <div class='leading-6'>
            <h1 class="font-semibold text-center text-1xl">{{ heading }}</h1>
            <p class="text-center text-sm pt-1">{{title}}
          </p>
+        </div>
+
     </div>
 </div>
    

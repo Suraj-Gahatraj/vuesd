@@ -1,14 +1,14 @@
 <template>
     <div class=" content-bg toggletheme " :class="{active : enableDzrkTheme===true}" >
       <div class="p-6 pt-3 flex gap-4   ">
-        <img src="../assets/hamburget menu icon.png" class="sm-screen h-4 mt-5" @click="$emit('togglenav')" />
+        <img src="../assets/hamburget_icon.png" class="sm-screen h-4 mt-5" @click="$emit('togglenav')" />
         <img src="../assets/Logo.png" class="h-16" />
       </div>
 
-      <div class="p-6">
+      <div class="p-6 mt-4">
         <button
           class="create-shipment-btn flex gap-4 justify-center w-full ">
-          <img src="../assets/plus icon - bg.png" /> Create
+          <img src="../assets/plus_icon.png" /> Create
           shipment
         </button>
       </div>
@@ -65,7 +65,7 @@
       <section class="border-b-2 border-indigo-10 pb-10 md:30 lg:mt-48 ">
         <div class="new-shipment-info bg-gradian  mt-20">
           <div class="flex gap-2 text-sm">
-            <img src="../assets/fire icon.png" class="h-4 ml-1 mt-1" />
+            <img src="../assets/fire_icon.png" class="h-4 ml-1 mt-1" />
             <div class="w-full leading-7">
               <p>A new shipment has been added.</p>
               <p>Details ></p>
@@ -82,7 +82,7 @@
           </div>
 
           <div class="flex gap-4 pt-4">
-            <img src="../assets/help icon.png" class="h-6" />
+            <img src="../assets/help_icon.png" class="h-6" />
             <p>Help & support</p>
           </div>
         </div>

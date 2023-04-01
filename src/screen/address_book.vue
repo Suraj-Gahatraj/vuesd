@@ -25,7 +25,7 @@
                   <img src="../assets/download.png" class="h-4" />
                 </div>
                 <div class="hover:animate-bounce imgBg">
-                  <img src="../assets/import icon.png" class="h-4" />
+                  <img src="../assets/importFile_icon.png" class="h-4" />
                 </div>
                 <div class="hover:animate-bounce imgBg">
                   <div class="bg-gradian text-center imgs">+</div>
